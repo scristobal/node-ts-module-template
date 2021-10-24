@@ -6,7 +6,10 @@ env:
 parser: '@typescript-eslint/parser'
 extends:
     - 'eslint:recommended'
+    - 'plugin:@typescript-eslint/eslint-recommended'
     - 'plugin:@typescript-eslint/recommended'
+    - 'plugin:prettier/recommended'
+    - 'prettier/@typescript-eslint'
 
 parserOptions:
     ecmaVersion: latest
@@ -15,6 +18,7 @@ plugins:
     - '@typescript-eslint'
     - 'import'
     - 'jest'
+    - 'prettier'
 
 rules:
     {
